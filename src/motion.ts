@@ -16,10 +16,10 @@ export class Motion {
         this._target = new Target();
         this._target.init();
     }
-    async capture(video: HTMLVideoElement, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement): Promise<void> {
-        const pose: T.Pose = await this._net.estimateSinglePose(video, {
-            flipHorizontal: true
-        });
+    capture(video: HTMLVideoElement, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement): Promise<void> {
+        // const pose: T.Pose = await this._net.estimateSinglePose(video, {
+        //     flipHorizontal: true
+        // });
         //console.log("points");
         //ctx.clearRect(0, 0, canvas.width, canvas.height);
         this.drawvideo(video, ctx, canvas);
