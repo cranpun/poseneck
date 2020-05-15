@@ -45,7 +45,7 @@ export class Camera {
     capture(): void {
         const captureProc = async () => {
             //if (this._loaded) {
-            //await this._motion.capture(this._video, this._ctx, this._canvas);
+            await this._motion.capture(this._video, this._ctx, this._canvas);
 
             window.requestAnimationFrame(captureProc);
             //}

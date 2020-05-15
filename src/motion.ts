@@ -20,12 +20,11 @@ export class Motion {
         const pose: T.Pose = await this._net.estimateSinglePose(video, {
             flipHorizontal: true
         });
-        // this.drawpose(pose.keypoints, ctx);
-        console.log("points");
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        //console.log("points");
+        //ctx.clearRect(0, 0, canvas.width, canvas.height);
         this.drawvideo(video, ctx, canvas);
-        this.drawtarget(ctx);
-        this.drawpose(pose.keypoints, ctx);
+        // this.drawtarget(ctx);
+        // this.drawpose(pose.keypoints, ctx);
     }
 
     private drawvideo(video: HTMLVideoElement, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) {
