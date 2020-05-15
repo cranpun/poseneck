@@ -11,8 +11,17 @@
     <title>motion capture on browser</title>
 </head>
 
+<style type="text/css">
+.d-none {
+    display: none;
+}
+.full {
+    width: 100%;
+}
+</style>
+
 <body>
-    <header>
+    <header class="d-none">
         <nav>
             <a href="/">motino capture on browser</a>
             <ul>
@@ -30,13 +39,12 @@
         <p>Page Subheading with <mark>highlighting</mark></p>
     </header>
     <main>
-        <hr>
         <section>
             <header>
-                <h2>stick motion</h2>
-                <p>this is you</p>
+                <h2>pose neck</h2>
+                <button id="bt-start">Let's stretch!!</button>
             </header>
-            <canvas id="stickmancanvas" width="640" height="480" style="background: dimgray"></canvas>
+            <canvas id="poseneckcanvas" width="640" height="480" style="background: dimgray" class="full"></canvas>
         </section>
     </main>
     <footer>
